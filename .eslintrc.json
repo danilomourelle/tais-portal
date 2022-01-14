@@ -12,14 +12,14 @@
     "extends": [
         "airbnb-base",
         "plugin:sonarjs/recommended",
-        "plugin:unicorn/recommended"
+        "plugin:unicorn/recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
-    "plugins": [
-        "@typescript-eslint",
-        "sonarjs",
-        "unicorn"
-    ],
+    "plugins": ["@typescript-eslint", "sonarjs", "unicorn"],
     "rules": {
+        "quotes": ["error", "double"],
+        "implicit-arrow-linebreak": "off",
+        "function-paren-newline": "off", // Verificar se é melhor o Prettier ou essa regra
         "import/extensions": [
             "error",
             "ignorePackages",
