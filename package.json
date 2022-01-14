@@ -2,22 +2,29 @@
   "name": "tais-portal",
   "version": "1.0.0",
   "description": "Projeto Back-end do Portal em NodeJS (See you Node-RED)",
+  "author": "Danilo Mourelle",
+  "license": "MIT",
   "main": "server.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/danilomourelle/tais-portal#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danilomourelle/tais-portal.git"
   },
-  "author": "Danilo Mourelle",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/danilomourelle/tais-portal/issues"
   },
-  "homepage": "https://github.com/danilomourelle/tais-portal#readme",
+  "scripts": {
+    "build": "tsc",
+    "dev:server": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "eslint": "^8.6.0",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
   }
 }
