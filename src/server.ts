@@ -1,11 +1,11 @@
-import express from 'express';
+import express from "express";
+import routes from "./routes";
 
 const app = express();
 
-app.get('/', (req, res) => {
-  return res.json({ message: "Hello Word" })
-})
+app.use(routes);
 
+/* eslint-disable no-console */
 app.listen(3000, () => {
-  console.log("🚀 Server running on port 3000");
-})
+  console.log("🚀 Server running on  dfsf dfdfdfdfd port 3000");
+});

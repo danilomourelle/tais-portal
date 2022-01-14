@@ -1,0 +1,47 @@
+{
+    "env": {
+        "es2021": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 13,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "extends": [
+        "airbnb-base",
+        "plugin:sonarjs/recommended",
+        "plugin:unicorn/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": ["@typescript-eslint", "sonarjs", "unicorn"],
+    "rules": {
+        "quotes": ["error", "double"],
+        "implicit-arrow-linebreak": "off",
+        "function-paren-newline": "off", // Verificar se é melhor o Prettier ou essa regra
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never"
+            }
+        ],
+        "unicorn/prevent-abbreviations": [
+            "error",
+            {
+                "replacements": {
+                    "aux": {
+                        "auxiliar": true
+                    }
+                }
+            }
+        ]
+    },
+    "reportUnusedDisableDirectives": true,
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
+    }
+}
