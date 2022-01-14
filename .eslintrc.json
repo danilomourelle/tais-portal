@@ -1,31 +1,47 @@
 {
-  "env": {
-    "es2021": true,
-    "node": true
-  },
-  "extends": [
-    "airbnb-base"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 13,
-    "sourceType": "module"
-  },
-  "plugins": [
-    "@typescript-eslint"
-  ],
-  "rules": {
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "ts": "never"
-      }
-    ]
-  },
-  "settings": {
-    "import/resolver": {
-      "typescript": {}
+    "env": {
+        "es2021": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 13,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "extends": [
+        "airbnb-base",
+        "plugin:sonarjs/recommended",
+        "plugin:unicorn/recommended"
+    ],
+    "plugins": [
+        "@typescript-eslint",
+        "sonarjs",
+        "unicorn"
+    ],
+    "rules": {
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never"
+            }
+        ],
+        "unicorn/prevent-abbreviations": [
+            "error",
+            {
+                "replacements": {
+                    "aux": {
+                        "auxiliar": true
+                    }
+                }
+            }
+        ]
+    },
+    "reportUnusedDisableDirectives": true,
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
     }
-  }
 }
