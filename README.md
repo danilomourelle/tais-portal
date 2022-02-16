@@ -23,11 +23,12 @@
  }
 ```
 
+**Plugins ESLint**
 https://github.com/sindresorhus/eslint-plugin-unicorn
 https://github.com/SonarSource/eslint-plugin-sonarjs
 https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin
 https://airbnb.io/javascript/
 
-habilitar o prettier como formatter default
+NÃO habilitar o prettier como formatter default
 
 Adicionar ESLint config

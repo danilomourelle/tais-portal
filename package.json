@@ -15,7 +15,7 @@
     },
     "scripts": {
         "build": "tsc",
-        "dev:server": "ts-node-dev --transpile-only --clear src/server.ts",
+        "dev:server": "ts-node-dev --inspect --transpile-only --clear src/server.ts",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
