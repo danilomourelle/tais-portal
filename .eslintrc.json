@@ -27,6 +27,15 @@
                 "ts": "never"
             }
         ],
+        "unicorn/filename-case": [
+            "error",
+            {
+                "cases": {
+                    "camelCase": true,
+                    "pascalCase": true
+                }
+            }
+        ],
         "unicorn/prevent-abbreviations": [
             "error",
             {
