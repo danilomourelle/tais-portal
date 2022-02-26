@@ -1,9 +1,9 @@
 import BasicError from "@errors/Basic";
 
-class NotFound extends BasicError {
-  constructor(message: string) {
+class NotFoundError extends BasicError {
+  constructor(message = "Dado não encontrado") {
     super(404, message);
   }
 }
 
-export default NotFound;
+export default NotFoundError;

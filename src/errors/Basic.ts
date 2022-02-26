@@ -1,5 +1,5 @@
 class BasicError extends Error {
-  constructor(public status = 500, message = "Internal Server Error") {
+  constructor(public readonly code: number, message: string) {
     super(message);
   }
 }
