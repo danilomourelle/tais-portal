@@ -21,18 +21,27 @@
         "unicorn"
     ],
     "rules": {
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "implicit-arrow-linebreak": "off",
         "function-paren-newline": "off", // Verificar se é melhor o Prettier ou essa regra
+        "implicit-arrow-linebreak": "off",
         "import/extensions": [
             "error",
             "ignorePackages",
             {
                 "ts": "never"
             }
+        ],
+        "no-console": [
+            "error",
+            {
+                "allow": [
+                    "warn",
+                    "error"
+                ]
+            }
+        ],
+        "quotes": [
+            "error",
+            "double"
         ],
         "unicorn/filename-case": [
             "error",

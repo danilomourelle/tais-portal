@@ -4,6 +4,7 @@
         "lib": [
             "ES2016.Array.Include"
         ],
+        "target": "ES2015",
         "allowJs": true,
         "resolveJsonModule": true,
         "outDir": "./dist",
@@ -38,6 +39,7 @@
     },
     "exclude": [
         "jest.config.ts",
-        "babel.config.js"
+        "babel.config.js",
+        "./dist/**/*"
     ]
 }
