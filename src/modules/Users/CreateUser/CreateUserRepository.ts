@@ -1,5 +1,5 @@
 import User from "@models/User";
-import portal from "src/database/prisma/portalClient";
+import portal from "@database/prisma/portalClient";
 
 export interface ICreateUserRepository {
   checkAlreadyExists(email: string): Promise<boolean>;

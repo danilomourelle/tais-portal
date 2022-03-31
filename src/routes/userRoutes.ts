@@ -1,6 +1,6 @@
 import { Router } from "express";
-import createUserFactory from "src/modules/Users/CreateUser/CreateUserFactory";
-import findAllUsersFactory from "src/modules/Users/FindAllUsers/FindAllUsersFactory";
+import createUserFactory from "@modules/Users/CreateUser/CreateUserFactory";
+import findAllUsersFactory from "@modules/Users/FindAllUsers/FindAllUsersFactory";
 
 const users = Router();
 

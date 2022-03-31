@@ -1,4 +1,4 @@
-import BasicError from "./Basic";
+import BasicError from "@errors/Basic";
 
 class ForbiddenError extends BasicError {
   constructor(message = "Sem autorização para realizar esta ação") {

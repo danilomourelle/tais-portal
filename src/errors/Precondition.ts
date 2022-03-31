@@ -1,4 +1,4 @@
-import BasicError from "./Basic";
+import BasicError from "@errors/Basic";
 
 class PreconditionError extends BasicError {
   constructor(message = "Algumas premissas não foram correspondidas, verifique os dados enviados") {
