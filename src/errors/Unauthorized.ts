@@ -1,4 +1,4 @@
-import BasicError from "./Basic";
+import BasicError from "@errors/Basic";
 
 export class UnauthorizedError extends BasicError {
   constructor(message = "Acesso negado. Verifique suas credenciais") {
