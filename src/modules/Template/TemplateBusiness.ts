@@ -4,7 +4,9 @@ class TemplateBusiness {
   constructor(private templateRepository: ITemplateRepository) {}
 
   async execute() {
-    return this.templateRepository.findAll();
+    const result = await this.templateRepository.findAll();
+
+    return result;
   }
 }
 
