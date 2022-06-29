@@ -1,4 +1,26 @@
 {
+    "editor.formatOnSave": true,
+    "files.eol": "\n",
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
-    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+    "[javascript]": {
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true
+        }
+      },
+      "[javascriptreact]": {
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true
+        }
+      },
+      "[typescript]": {
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true
+        }
+      },
+      "[typescriptreact]": {
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true
+        }
+      }
 }
