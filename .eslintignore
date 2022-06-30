@@ -1,5 +1,5 @@
 node_modules/
-prisma/*
 dist/
-**/*.js
+prisma/*
 jest.config.ts
+**/*.js

@@ -50,6 +50,7 @@
         "jest.config.ts",
         "babel.config.js",
         "./dist/**/*",
-        "./prisma/*"
+        "./prisma/*",
+        "commitlint.config.js"
     ]
 }
